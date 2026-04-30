@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — YourFinMath | Free Financial Calculators for India</title>
+<meta name="description" content="Learn about YourFinMath — a free platform offering 35+ financial calculators for India. Built to help every Indian plan EMI, SIP, tax and savings with clarity.">
+<link rel="canonical" href="https://yourfinmath.com/about.html">
+<meta property="og:title" content="About YourFinMath — Free Financial Calculators for India">
+<meta property="og:description" content="35+ free financial calculators for India. No signup. No ads. Just honest tools for your money decisions.">
+<meta property="og:url" content="https://yourfinmath.com/about.html">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0f3b39">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f8f6;
+  --card:rgba(255,255,255,0.88);
+  --ink:#0f2f2d;
+  --text:#123b39;
+  --text2:#4f6c69;
+  --text3:#79908d;
+  --line:rgba(15,47,45,0.08);
+  --gold:#b8892d;
+  --gold2:#d8b970;
+  --teal:#1d8f9a;
+  --emerald:#1fa971;
+  --shadow:0 18px 48px rgba(19,53,50,0.08);
+  --shadow-soft:0 8px 24px rgba(19,53,50,0.06);
+  --font-display:'Fraunces',serif;
+  --font-body:'Plus Jakarta Sans',sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--font-body);
+  color:var(--text);
+  min-height:100vh;
+  overflow-x:hidden;
+  background:
+    radial-gradient(circle at top left,rgba(216,185,112,0.18),transparent 28%),
+    radial-gradient(circle at top right,rgba(29,143,154,0.10),transparent 24%),
+    linear-gradient(180deg,#fbfdfc 0%,#f2f7f4 52%,#edf3f1 100%);
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(14,55,52,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(14,55,52,0.025) 1px,transparent 1px);
+  background-size:36px 36px;
+  mask-image:linear-gradient(180deg,rgba(0,0,0,0.18),transparent 72%);
+}
+a{color:inherit;text-decoration:none;}
+button,input{font:inherit;}
+
+/* ── HEADER ── */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(251,253,252,0.78);
+  backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);
+  border-bottom:1px solid rgba(15,47,45,0.06);
+}
+.header-inner{
+  max-width:1280px;margin:0 auto;
+  padding:1rem 1.5rem;
+  display:flex;align-items:center;justify-content:space-between;gap:1.5rem;
+}
+.logo{display:flex;align-items:center;gap:0.9rem;}
+.logo-icon{
+  width:48px;height:48px;display:grid;place-items:center;
+  border-radius:16px;
+  background:linear-gradient(135deg,#0f3b39,#156664 62%,#1d8f9a);
+  color:#f7efe0;font-size:1.3rem;
+  box-shadow:0 14px 28px rgba(21,102,100,0.22);
+}
+.logo-text{font-family:var(--font-display);font-size:1.65rem;line-height:1;color:var(--ink);}
+.logo-text span{color:var(--gold);}
+.logo-tagline{margin-top:0.3rem;font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--text3);}
+.header-cta{
+  border:none;cursor:pointer;white-space:nowrap;border-radius:18px;
+  padding:0.85rem 1.25rem;font-weight:700;color:#fcf8ef;
+  background:linear-gradient(135deg,#0f3b39,#156664 58%,#1d8f9a);
+  box-shadow:0 16px 30px rgba(21,102,100,0.18);
+  transition:transform .18s ease,box-shadow .18s ease;
+  text-decoration:none;display:inline-block;
+}
+.header-cta:hover{transform:translateY(-2px);box-shadow:0 22px 34px rgba(21,102,100,0.22);}
+
+/* ── HERO ── */
+.page-hero{
+  max-width:860px;margin:0 auto;
+  padding:clamp(3rem,6vw,5rem) 1.5rem 3rem;
+  text-align:center;
+}
+.page-badge{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  padding:0.65rem 1rem;border-radius:999px;
+  border:1px solid rgba(184,137,45,0.18);
+  background:rgba(255,250,240,0.84);
+  color:#8b6b24;font-size:0.8rem;font-weight:700;
+  box-shadow:0 10px 26px rgba(184,137,45,0.10);
+  margin-bottom:1.4rem;
+}
+.page-hero h1{
+  font-family:var(--font-display);
+  font-size:clamp(2.4rem,6vw,4.2rem);
+  line-height:1.05;color:var(--ink);margin-bottom:1.2rem;
+}
+.page-hero h1 span{color:var(--gold);}
+.page-hero p{
+  font-size:clamp(1rem,1.8vw,1.1rem);line-height:1.85;
+  color:var(--text2);max-width:640px;margin:0 auto;
+}
+
+/* ── CONTENT ── */
+.content{max-width:900px;margin:0 auto;padding:0 1.5rem 5rem;}
+
+.card{
+  background:rgba(255,255,255,0.88);
+  border:1px solid rgba(15,47,45,0.07);
+  border-radius:28px;
+  padding:2.4rem 2.2rem;
+  box-shadow:var(--shadow-soft);
+  margin-bottom:1.8rem;
+}
+.card-icon{font-size:2.2rem;margin-bottom:1rem;}
+.card h2{
+  font-family:var(--font-display);
+  font-size:1.7rem;color:var(--ink);margin-bottom:0.8rem;
+}
+.card h2 span{color:var(--gold);}
+.card p{font-size:1rem;line-height:1.85;color:var(--text2);margin-bottom:0.9rem;}
+.card p:last-child{margin-bottom:0;}
+
+/* ── VALUES GRID ── */
+.values-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1.2rem;margin-bottom:1.8rem;
+}
+.value-card{
+  background:rgba(255,255,255,0.88);
+  border:1px solid rgba(15,47,45,0.07);
+  border-radius:22px;padding:1.8rem 1.5rem;
+  box-shadow:var(--shadow-soft);
+}
+.value-icon{font-size:1.8rem;margin-bottom:0.8rem;}
+.value-card h3{font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:0.5rem;}
+.value-card p{font-size:0.9rem;line-height:1.7;color:var(--text2);}
+
+/* ── STATS ── */
+.stats-row{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1rem;margin-bottom:1.8rem;
+}
+.stat-box{
+  background:linear-gradient(135deg,rgba(15,59,57,0.04),rgba(29,143,154,0.06));
+  border:1px solid rgba(15,47,45,0.08);
+  border-radius:22px;padding:1.6rem 1rem;text-align:center;
+}
+.stat-box .num{font-family:var(--font-display);font-size:2.2rem;color:var(--ink);}
+.stat-box .num span{color:var(--gold);}
+.stat-box .lbl{margin-top:0.4rem;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);}
+
+/* ── CTA BANNER ── */
+.cta-banner{
+  background:linear-gradient(135deg,#0f3b39,#156664 60%,#1d8f9a);
+  border-radius:28px;padding:2.8rem 2.2rem;text-align:center;
+  box-shadow:0 24px 48px rgba(21,102,100,0.22);
+  margin-bottom:1.8rem;
+}
+.cta-banner h2{font-family:var(--font-display);font-size:1.9rem;color:#f7efe0;margin-bottom:0.7rem;}
+.cta-banner p{color:rgba(247,239,224,0.78);font-size:1rem;line-height:1.7;margin-bottom:1.6rem;}
+.cta-btn{
+  display:inline-block;
+  background:linear-gradient(135deg,#b8892d,#d8b970);
+  color:#1a0f00;font-weight:800;border-radius:18px;
+  padding:1rem 2rem;font-size:1rem;
+  box-shadow:0 14px 28px rgba(184,137,45,0.25);
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 20px 36px rgba(184,137,45,0.32);}
+
+/* ── FOOTER ── */
+footer{
+  background:linear-gradient(180deg,#0d3533,#0a2927);
+  padding:2.4rem 1.5rem;text-align:center;
+}
+.footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-bottom:1rem;}
+.footer-links a{color:rgba(247,239,224,0.65);font-size:0.85rem;font-weight:600;transition:color .18s;}
+.footer-links a:hover{color:var(--gold2);}
+.footer-copy{color:rgba(247,239,224,0.35);font-size:0.8rem;}
+
+@media(max-width:640px){
+  .stats-row{grid-template-columns:1fr 1fr;}
+  .card{padding:1.6rem 1.3rem;}
+  .cta-banner{padding:2rem 1.3rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <div class="logo-icon">₹</div>
+      <div>
+        <div class="logo-text">Your<span>FinMath</span></div>
+        <div class="logo-tagline">Financial Wisdom · Free Forever</div>
+      </div>
+    </a>
+    <a class="header-cta" href="index.html">← Back to Calculators</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-badge">✦ Our Story · Built for India</div>
+  <h1>We built <span>YourFinMath</span> because good financial tools should be free</h1>
+  <p>Every Indian deserves access to accurate, easy-to-use financial calculators — without paywalls, popups or confusing interfaces. That's exactly why we built this.</p>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <!-- Stats -->
+  <div class="stats-row">
+    <div class="stat-box">
+      <div class="num">35<span>+</span></div>
+      <div class="lbl">Free Calculators</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">0</div>
+      <div class="lbl">Signup Required</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">100<span>%</span></div>
+      <div class="lbl">Free Forever</div>
+    </div>
+  </div>
+
+  <!-- Our Story -->
+  <div class="card">
+    <div class="card-icon">💡</div>
+    <h2>Why We <span>Built This</span></h2>
+    <p>Managing personal finances in India is complicated. Between EMI calculations, tax regime comparisons, SIP projections and retirement planning — most people feel lost. The tools that exist are either too basic, cluttered with ads, or hidden behind expensive apps.</p>
+    <p>We believed there was a better way. A clean, fast, trustworthy platform — designed specifically for the Indian financial landscape — that gives you real answers in seconds. No signup. No subscription. No confusion.</p>
+    <p>YourFinMath was built to be that tool. For students planning their first SIP. For salaried professionals comparing tax regimes. For families deciding between renting and buying. For anyone who wants to make smarter money decisions.</p>
+  </div>
+
+  <!-- Values -->
+  <div class="values-grid">
+    <div class="value-card">
+      <div class="value-icon">🎯</div>
+      <h3>Accuracy First</h3>
+      <p>Every calculator is built on verified formulas. We update for every Union Budget and RBI policy change so you always get correct results.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🔒</div>
+      <h3>Your Privacy Matters</h3>
+      <p>All calculations happen right in your browser. Your financial numbers never leave your device. No data collection, no tracking of your inputs.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">⚡</div>
+      <h3>Fast & Simple</h3>
+      <p>Results in under 3 seconds. Clean inputs. No distractions. Designed so anyone — from a student to a senior citizen — can use it confidently.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🇮🇳</div>
+      <h3>Built for India</h3>
+      <p>PPF, EPF, NPS, HRA, GST, new vs old tax regime — every calculator is tuned for Indian financial rules, not just copy-pasted from foreign tools.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">♾️</div>
+      <h3>Free Forever</h3>
+      <p>The core tools will always be free. We believe financial clarity is a right, not a privilege. No paywalls, ever.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">📅</div>
+      <h3>Always Updated</h3>
+      <p>FY 2026-27 tax slabs, latest PPF and EPF rates, current GST rules — we keep everything current so you can plan with confidence.</p>
+    </div>
+  </div>
+
+  <!-- What we offer -->
+  <div class="card">
+    <div class="card-icon">🧮</div>
+    <h2>What <span>YourFinMath</span> Offers</h2>
+    <p>We cover every major area of personal finance that matters to Indians:</p>
+    <p>🏠 <strong>Loans & EMI</strong> — Home loan, car loan, personal loan, prepayment savings and loan eligibility calculators.</p>
+    <p>📈 <strong>Investments</strong> — SIP, lumpsum, step-up SIP, CAGR, goal-based planning and more.</p>
+    <p>🏦 <strong>Savings</strong> — FD, RD, PPF, EPF, NPS and retirement corpus calculators.</p>
+    <p>📋 <strong>Tax</strong> — Income tax (new & old regime), GST, HRA, capital gains and salary breakdown.</p>
+    <p>🔮 <strong>What-If Tools</strong> — FIRE number, debt payoff, savings lifespan, chai habit cost and viral money scenarios.</p>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <h2>Ready to plan your finances?</h2>
+    <p>35+ free calculators. No signup. Instant results. Built for every Indian.</p>
+    <a class="cta-btn" href="index.html">Open the Calculators →</a>
+  </div>
+
+  <!-- Contact teaser -->
+  <div class="card">
+    <div class="card-icon">✉️</div>
+    <h2>Get in <span>Touch</span></h2>
+    <p>Have a suggestion for a new calculator? Found an error? Want to advertise on YourFinMath? We'd love to hear from you.</p>
+    <p>📧 Email us at: <a href="mailto:hello@yourfinmath.com" style="color:var(--teal);font-weight:600;">hello@yourfinmath.com</a></p>
+    <p>Or visit our <a href="contact.html" style="color:var(--teal);font-weight:600;">Contact page →</a></p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="contact.html">Contact</a>
+    <a href="mailto:hello@yourfinmath.com">Advertise</a>
+    <a href="sitemap.xml">Sitemap</a>
+  </div>
+  <div class="footer-copy">© 2026 YourFinMath.com · Made with ♥ in India</div>
+</footer>
+
+</body>
+</html>
