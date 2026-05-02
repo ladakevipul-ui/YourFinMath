@@ -7,219 +7,281 @@
 <meta name="description" content="Learn about YourFinMath — a free platform offering 35+ financial calculators for India. Built to help every Indian plan EMI, SIP, tax and savings with clarity.">
 <link rel="canonical" href="https://yourfinmath.com/about.html">
 <meta property="og:title" content="About YourFinMath — Free Financial Calculators for India">
-<meta property="og:description" content="35+ free financial calculators for India. No signup. No ads. Just honest tools for your money decisions.">
 <meta property="og:url" content="https://yourfinmath.com/about.html">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#0f3b39">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#0B1F3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#f4f8f6;
-  --card:rgba(255,255,255,0.88);
-  --ink:#0f2f2d;
-  --text:#123b39;
-  --text2:#4f6c69;
-  --text3:#79908d;
-  --line:rgba(15,47,45,0.08);
-  --gold:#b8892d;
-  --gold2:#d8b970;
-  --teal:#1d8f9a;
-  --emerald:#1fa971;
-  --shadow:0 18px 48px rgba(19,53,50,0.08);
-  --shadow-soft:0 8px 24px rgba(19,53,50,0.06);
-  --font-display:'Fraunces',serif;
-  --font-body:'Plus Jakarta Sans',sans-serif;
-  --font-mono:'JetBrains Mono',monospace;
+:root {
+  --navy:        #0B1F3A;
+  --navy-mid:    #122948;
+  --navy-light:  #1A3A5C;
+  --emerald:     #1A7A4A;
+  --emerald-pale:#E8F5EE;
+  --gold:        #C8973A;
+  --gold-light:  #E8C97A;
+  --gold-pale:   #FDF6E8;
+  --bg:          #F7F9FC;
+  --bg2:         #EEF2F8;
+  --bg3:         #E4EAF4;
+  --surface:     #FFFFFF;
+  --ink:         #0B1828;
+  --text:        #1E2D42;
+  --text2:       #4A5C72;
+  --text3:       #7A8FA8;
+  --border:      rgba(11,31,58,0.09);
+  --border-mid:  rgba(11,31,58,0.15);
+  --shadow:      0 16px 48px rgba(11,31,58,0.10);
+  --shadow-soft: 0 6px 20px rgba(11,31,58,0.07);
+  --font-display:'Playfair Display', Georgia, serif;
+  --font-body:   'Outfit', system-ui, sans-serif;
+  --font-mono:   'Fira Code', monospace;
 }
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{
-  font-family:var(--font-body);
-  color:var(--text);
-  min-height:100vh;
-  overflow-x:hidden;
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body); background: var(--bg);
+  color: var(--text); overflow-x: hidden; -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── NAV ── */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1rem 3rem; gap: 1.5rem;
+  background: rgba(247,249,252,0.95);
+  backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 16px rgba(11,31,58,0.05);
+}
+.nav-logo {
+  font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;
+  color: var(--navy); display: flex; align-items: center; gap: 0.5rem; letter-spacing: -0.02em;
+}
+.nav-logo-dot { width: 8px; height: 8px; background: var(--emerald); border-radius: 50%; }
+.nav-logo sub {
+  font-family: var(--font-mono); font-size: 0.55rem; letter-spacing: 0.18em;
+  color: var(--text3); text-transform: uppercase; font-style: normal;
+  vertical-align: middle; margin-left: 0.3rem;
+}
+.nav-back {
+  background: var(--navy); color: #fff;
+  padding: 0.5rem 1.25rem; border-radius: 8px;
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.03em;
+  box-shadow: 0 4px 12px rgba(11,31,58,0.22);
+  transition: background 0.2s, transform 0.15s;
+}
+.nav-back:hover { background: var(--navy-light); transform: translateY(-1px); }
+.nav-links-mini {
+  display: flex; gap: 0.4rem; align-items: center; list-style: none;
+}
+.nav-links-mini a {
+  font-size: 0.8rem; font-weight: 500; color: var(--text2);
+  padding: 0.4rem 0.8rem; border-radius: 6px; transition: color 0.18s, background 0.18s;
+}
+.nav-links-mini a:hover { color: var(--navy); background: var(--bg2); }
+.nav-links-mini a.active { color: var(--navy); font-weight: 600; }
+
+/* ── PAGE HERO ── */
+.page-hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  padding: 5rem 2rem 4.5rem; text-align: center; position: relative; overflow: hidden;
+}
+.page-hero::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
   background:
-    radial-gradient(circle at top left,rgba(216,185,112,0.18),transparent 28%),
-    radial-gradient(circle at top right,rgba(29,143,154,0.10),transparent 24%),
-    linear-gradient(180deg,#fbfdfc 0%,#f2f7f4 52%,#edf3f1 100%);
-  -webkit-font-smoothing:antialiased;
+    radial-gradient(ellipse at 20% 60%, rgba(26,122,74,0.15), transparent 50%),
+    radial-gradient(ellipse at 80% 30%, rgba(200,151,58,0.10), transparent 45%);
 }
-body::before{
-  content:'';position:fixed;inset:0;pointer-events:none;
-  background-image:linear-gradient(rgba(14,55,52,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(14,55,52,0.025) 1px,transparent 1px);
-  background-size:36px 36px;
-  mask-image:linear-gradient(180deg,rgba(0,0,0,0.18),transparent 72%);
+.hero-eyebrow {
+  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--gold);
+  display: inline-flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;
+  position: relative;
 }
-a{color:inherit;text-decoration:none;}
-button,input{font:inherit;}
-
-/* ── HEADER ── */
-header{
-  position:sticky;top:0;z-index:50;
-  background:rgba(251,253,252,0.78);
-  backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);
-  border-bottom:1px solid rgba(15,47,45,0.06);
+.hero-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+.page-hero h1 {
+  font-family: var(--font-display); font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+  font-weight: 500; color: #fff; line-height: 1.15; letter-spacing: -0.02em;
+  max-width: 700px; margin: 0 auto 1.2rem; position: relative;
 }
-.header-inner{
-  max-width:1280px;margin:0 auto;
-  padding:1rem 1.5rem;
-  display:flex;align-items:center;justify-content:space-between;gap:1.5rem;
-}
-.logo{display:flex;align-items:center;gap:0.9rem;}
-.logo-icon{
-  width:48px;height:48px;display:grid;place-items:center;
-  border-radius:16px;
-  background:linear-gradient(135deg,#0f3b39,#156664 62%,#1d8f9a);
-  color:#f7efe0;font-size:1.3rem;
-  box-shadow:0 14px 28px rgba(21,102,100,0.22);
-}
-.logo-text{font-family:var(--font-display);font-size:1.65rem;line-height:1;color:var(--ink);}
-.logo-text span{color:var(--gold);}
-.logo-tagline{margin-top:0.3rem;font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--text3);}
-.header-cta{
-  border:none;cursor:pointer;white-space:nowrap;border-radius:18px;
-  padding:0.85rem 1.25rem;font-weight:700;color:#fcf8ef;
-  background:linear-gradient(135deg,#0f3b39,#156664 58%,#1d8f9a);
-  box-shadow:0 16px 30px rgba(21,102,100,0.18);
-  transition:transform .18s ease,box-shadow .18s ease;
-  text-decoration:none;display:inline-block;
-}
-.header-cta:hover{transform:translateY(-2px);box-shadow:0 22px 34px rgba(21,102,100,0.22);}
-
-/* ── HERO ── */
-.page-hero{
-  max-width:860px;margin:0 auto;
-  padding:clamp(3rem,6vw,5rem) 1.5rem 3rem;
-  text-align:center;
-}
-.page-badge{
-  display:inline-flex;align-items:center;gap:0.5rem;
-  padding:0.65rem 1rem;border-radius:999px;
-  border:1px solid rgba(184,137,45,0.18);
-  background:rgba(255,250,240,0.84);
-  color:#8b6b24;font-size:0.8rem;font-weight:700;
-  box-shadow:0 10px 26px rgba(184,137,45,0.10);
-  margin-bottom:1.4rem;
-}
-.page-hero h1{
-  font-family:var(--font-display);
-  font-size:clamp(2.4rem,6vw,4.2rem);
-  line-height:1.05;color:var(--ink);margin-bottom:1.2rem;
-}
-.page-hero h1 span{color:var(--gold);}
-.page-hero p{
-  font-size:clamp(1rem,1.8vw,1.1rem);line-height:1.85;
-  color:var(--text2);max-width:640px;margin:0 auto;
+.page-hero h1 em { font-style: italic; color: var(--gold-light); }
+.page-hero p {
+  font-size: 1rem; font-weight: 300; line-height: 1.82;
+  color: rgba(255,255,255,0.65); max-width: 560px; margin: 0 auto;
+  position: relative;
 }
 
-/* ── CONTENT ── */
-.content{max-width:900px;margin:0 auto;padding:0 1.5rem 5rem;}
+/* ── CONTENT WRAPPER ── */
+.content { max-width: 960px; margin: 0 auto; padding: 4rem 2rem 5rem; }
 
-.card{
-  background:rgba(255,255,255,0.88);
-  border:1px solid rgba(15,47,45,0.07);
-  border-radius:28px;
-  padding:2.4rem 2.2rem;
-  box-shadow:var(--shadow-soft);
-  margin-bottom:1.8rem;
+/* ── STATS ROW ── */
+.stats-row {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-bottom: 2rem;
 }
-.card-icon{font-size:2.2rem;margin-bottom:1rem;}
-.card h2{
-  font-family:var(--font-display);
-  font-size:1.7rem;color:var(--ink);margin-bottom:0.8rem;
+.stat-box {
+  background: var(--surface); border: 1px solid var(--border-mid);
+  border-radius: 14px; padding: 1.75rem 1.25rem; text-align: center;
+  box-shadow: var(--shadow-soft);
 }
-.card h2 span{color:var(--gold);}
-.card p{font-size:1rem;line-height:1.85;color:var(--text2);margin-bottom:0.9rem;}
-.card p:last-child{margin-bottom:0;}
+.stat-num {
+  font-family: var(--font-display); font-size: 2.4rem; font-weight: 700;
+  color: var(--navy); letter-spacing: -0.02em; line-height: 1;
+}
+.stat-num span { color: var(--emerald); }
+.stat-lbl {
+  margin-top: 0.5rem; font-family: var(--font-mono);
+  font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text3);
+}
+
+/* ── SECTION CARD ── */
+.card {
+  background: var(--surface); border: 1px solid var(--border-mid);
+  border-radius: 16px; padding: 2.4rem; box-shadow: var(--shadow-soft);
+  margin-bottom: 1.5rem;
+}
+.card-eyebrow {
+  font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--emerald);
+  display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.9rem;
+}
+.card-eyebrow::before { content: ''; display: block; width: 20px; height: 1px; background: var(--emerald); }
+.card h2 {
+  font-family: var(--font-display); font-size: 1.7rem; font-weight: 500;
+  color: var(--navy); letter-spacing: -0.01em; margin-bottom: 1rem;
+}
+.card h2 em { font-style: italic; color: var(--emerald); }
+.card p {
+  font-size: 0.96rem; font-weight: 300; line-height: 1.85;
+  color: var(--text2); margin-bottom: 0.9rem;
+}
+.card p:last-child { margin-bottom: 0; }
+.card p strong { color: var(--navy); font-weight: 600; }
 
 /* ── VALUES GRID ── */
-.values-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:1.2rem;margin-bottom:1.8rem;
+.values-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-bottom: 1.5rem;
 }
-.value-card{
-  background:rgba(255,255,255,0.88);
-  border:1px solid rgba(15,47,45,0.07);
-  border-radius:22px;padding:1.8rem 1.5rem;
-  box-shadow:var(--shadow-soft);
+.value-card {
+  background: var(--surface); border: 1px solid var(--border-mid);
+  border-radius: 14px; padding: 1.75rem 1.4rem; box-shadow: var(--shadow-soft);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
-.value-icon{font-size:1.8rem;margin-bottom:0.8rem;}
-.value-card h3{font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:0.5rem;}
-.value-card p{font-size:0.9rem;line-height:1.7;color:var(--text2);}
+.value-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--navy); }
+.value-icon { font-size: 1.8rem; margin-bottom: 0.85rem; }
+.value-card h3 {
+  font-family: var(--font-display); font-size: 1.05rem; font-weight: 600;
+  color: var(--navy); margin-bottom: 0.5rem;
+}
+.value-card p { font-size: 0.85rem; font-weight: 300; line-height: 1.72; color: var(--text2); }
 
-/* ── STATS ── */
-.stats-row{
-  display:grid;grid-template-columns:repeat(3,1fr);
-  gap:1rem;margin-bottom:1.8rem;
+/* ── OFFER LIST ── */
+.offer-list { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.25rem; }
+.offer-item {
+  display: flex; align-items: flex-start; gap: 1rem;
+  padding: 1rem 1.1rem; border-radius: 10px;
+  background: var(--bg); border: 1px solid var(--border);
 }
-.stat-box{
-  background:linear-gradient(135deg,rgba(15,59,57,0.04),rgba(29,143,154,0.06));
-  border:1px solid rgba(15,47,45,0.08);
-  border-radius:22px;padding:1.6rem 1rem;text-align:center;
-}
-.stat-box .num{font-family:var(--font-display);font-size:2.2rem;color:var(--ink);}
-.stat-box .num span{color:var(--gold);}
-.stat-box .lbl{margin-top:0.4rem;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);}
+.offer-emoji { font-size: 1.2rem; flex-shrink: 0; margin-top: 0.05rem; }
+.offer-item strong { display: block; font-size: 0.88rem; font-weight: 600; color: var(--navy); margin-bottom: 0.2rem; }
+.offer-item span { font-size: 0.83rem; font-weight: 300; color: var(--text2); line-height: 1.6; }
 
 /* ── CTA BANNER ── */
-.cta-banner{
-  background:linear-gradient(135deg,#0f3b39,#156664 60%,#1d8f9a);
-  border-radius:28px;padding:2.8rem 2.2rem;text-align:center;
-  box-shadow:0 24px 48px rgba(21,102,100,0.22);
-  margin-bottom:1.8rem;
+.cta-banner {
+  background: linear-gradient(135deg, var(--navy), var(--navy-light));
+  border-radius: 16px; padding: 3rem 2.5rem; text-align: center;
+  box-shadow: 0 12px 36px rgba(11,31,58,0.22); margin-bottom: 1.5rem;
 }
-.cta-banner h2{font-family:var(--font-display);font-size:1.9rem;color:#f7efe0;margin-bottom:0.7rem;}
-.cta-banner p{color:rgba(247,239,224,0.78);font-size:1rem;line-height:1.7;margin-bottom:1.6rem;}
-.cta-btn{
-  display:inline-block;
-  background:linear-gradient(135deg,#b8892d,#d8b970);
-  color:#1a0f00;font-weight:800;border-radius:18px;
-  padding:1rem 2rem;font-size:1rem;
-  box-shadow:0 14px 28px rgba(184,137,45,0.25);
-  transition:transform .18s ease,box-shadow .18s ease;
+.cta-banner h2 {
+  font-family: var(--font-display); font-size: 2rem; font-weight: 500;
+  color: #fff; letter-spacing: -0.01em; margin-bottom: 0.75rem;
 }
-.cta-btn:hover{transform:translateY(-2px);box-shadow:0 20px 36px rgba(184,137,45,0.32);}
+.cta-banner h2 em { font-style: italic; color: var(--gold-light); }
+.cta-banner p { font-size: 0.94rem; font-weight: 300; color: rgba(255,255,255,0.62); margin-bottom: 1.75rem; line-height: 1.75; }
+.cta-btn {
+  display: inline-block; background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--navy); padding: 0.95rem 2.2rem; border-radius: 10px;
+  font-size: 0.88rem; font-weight: 700; letter-spacing: 0.02em;
+  box-shadow: 0 6px 20px rgba(200,151,58,0.35);
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.cta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(200,151,58,0.45); }
+
+/* ── CONTACT TEASER ── */
+.contact-teaser {
+  background: var(--surface); border: 1px solid var(--border-mid);
+  border-radius: 16px; padding: 2rem 2.4rem; box-shadow: var(--shadow-soft);
+  display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;
+}
+.contact-teaser-text h3 {
+  font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; color: var(--navy); margin-bottom: 0.4rem;
+}
+.contact-teaser-text p { font-size: 0.88rem; font-weight: 300; color: var(--text2); line-height: 1.7; }
+.contact-teaser-text a { color: var(--emerald); font-weight: 500; }
+.btn-outline-navy {
+  border: 1px solid var(--border-mid); color: var(--navy);
+  padding: 0.75rem 1.5rem; border-radius: 10px; font-size: 0.84rem;
+  font-weight: 600; white-space: nowrap; background: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+.btn-outline-navy:hover { border-color: var(--navy); background: var(--bg2); }
 
 /* ── FOOTER ── */
-footer{
-  background:linear-gradient(180deg,#0d3533,#0a2927);
-  padding:2.4rem 1.5rem;text-align:center;
+footer {
+  background: var(--navy); padding: 2.5rem 2rem; text-align: center;
 }
-.footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-bottom:1rem;}
-.footer-links a{color:rgba(247,239,224,0.65);font-size:0.85rem;font-weight:600;transition:color .18s;}
-.footer-links a:hover{color:var(--gold2);}
-.footer-copy{color:rgba(247,239,224,0.35);font-size:0.8rem;}
+.footer-logo { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: #fff; letter-spacing: -0.01em; }
+.footer-logo span { color: var(--emerald); }
+.footer-links {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 1.25rem; list-style: none; margin: 1rem 0;
+}
+.footer-links a { font-size: 0.8rem; font-weight: 400; color: rgba(255,255,255,0.55); transition: color 0.18s; }
+.footer-links a:hover { color: #fff; }
+.footer-copy { color: rgba(255,255,255,0.3); font-size: 0.78rem; }
 
-@media(max-width:640px){
-  .stats-row{grid-template-columns:1fr 1fr;}
-  .card{padding:1.6rem 1.3rem;}
-  .cta-banner{padding:2rem 1.3rem;}
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  nav { padding: 1rem; }
+  .nav-links-mini { display: none; }
+  .values-grid { grid-template-columns: 1fr 1fr; }
+  .stats-row { grid-template-columns: 1fr 1fr 1fr; }
+  .content { padding: 2.5rem 1rem 4rem; }
+  .card { padding: 1.75rem 1.25rem; }
+}
+@media (max-width: 520px) {
+  .values-grid { grid-template-columns: 1fr; }
+  .stats-row { grid-template-columns: 1fr; }
+  .page-hero { padding: 3.5rem 1rem 3rem; }
 }
 </style>
 </head>
 <body>
 
-<!-- HEADER -->
-<header>
-  <div class="header-inner">
-    <a class="logo" href="index.html">
-      <div class="logo-icon">₹</div>
-      <div>
-        <div class="logo-text">Your<span>FinMath</span></div>
-        <div class="logo-tagline">Financial Wisdom · Free Forever</div>
-      </div>
-    </a>
-    <a class="header-cta" href="index.html">← Back to Calculators</a>
-  </div>
-</header>
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-dot"></div>
+    YourFinMath
+    <sub>Financial Wisdom</sub>
+  </a>
+  <ul class="nav-links-mini">
+    <li><a href="index.html">Calculators</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+  </ul>
+  <a class="nav-back" href="index.html">← Back to Calculators</a>
+</nav>
 
 <!-- HERO -->
-<div class="page-hero">
-  <div class="page-badge">✦ Our Story · Built for India</div>
-  <h1>We built <span>YourFinMath</span> because good financial tools should be free</h1>
-  <p>Every Indian deserves access to accurate, easy-to-use financial calculators — without paywalls, popups or confusing interfaces. That's exactly why we built this.</p>
-</div>
+<section class="page-hero">
+  <div class="hero-eyebrow">Our Story · Built for India</div>
+  <h1>Good financial tools should be <em>free</em> for every Indian</h1>
+  <p>YourFinMath was built because accurate, trustworthy financial calculators shouldn't be locked behind paywalls, popups or confusing interfaces.</p>
+</section>
 
 <!-- CONTENT -->
 <div class="content">
@@ -227,25 +289,25 @@ footer{
   <!-- Stats -->
   <div class="stats-row">
     <div class="stat-box">
-      <div class="num">35<span>+</span></div>
-      <div class="lbl">Free Calculators</div>
+      <div class="stat-num">35<span>+</span></div>
+      <div class="stat-lbl">Free Calculators</div>
     </div>
     <div class="stat-box">
-      <div class="num">0</div>
-      <div class="lbl">Signup Required</div>
+      <div class="stat-num"><span>0</span></div>
+      <div class="stat-lbl">Signup Required</div>
     </div>
     <div class="stat-box">
-      <div class="num">100<span>%</span></div>
-      <div class="lbl">Free Forever</div>
+      <div class="stat-num">100<span>%</span></div>
+      <div class="stat-lbl">Free Forever</div>
     </div>
   </div>
 
   <!-- Our Story -->
   <div class="card">
-    <div class="card-icon">💡</div>
-    <h2>Why We <span>Built This</span></h2>
+    <div class="card-eyebrow">Why We Built This</div>
+    <h2>The problem we set out to <em>solve</em></h2>
     <p>Managing personal finances in India is complicated. Between EMI calculations, tax regime comparisons, SIP projections and retirement planning — most people feel lost. The tools that exist are either too basic, cluttered with ads, or hidden behind expensive apps.</p>
-    <p>We believed there was a better way. A clean, fast, trustworthy platform — designed specifically for the Indian financial landscape — that gives you real answers in seconds. No signup. No subscription. No confusion.</p>
+    <p>We believed there was a better way. A clean, fast, trustworthy platform — designed specifically for the Indian financial landscape — that gives you real answers in seconds. <strong>No signup. No subscription. No confusion.</strong></p>
     <p>YourFinMath was built to be that tool. For students planning their first SIP. For salaried professionals comparing tax regimes. For families deciding between renting and buying. For anyone who wants to make smarter money decisions.</p>
   </div>
 
@@ -259,7 +321,7 @@ footer{
     <div class="value-card">
       <div class="value-icon">🔒</div>
       <h3>Your Privacy Matters</h3>
-      <p>All calculations happen right in your browser. Your financial numbers never leave your device. No data collection, no tracking of your inputs.</p>
+      <p>All calculations happen in your browser. Your financial numbers never leave your device. No data collection, no tracking of your inputs.</p>
     </div>
     <div class="value-card">
       <div class="value-icon">⚡</div>
@@ -269,7 +331,7 @@ footer{
     <div class="value-card">
       <div class="value-icon">🇮🇳</div>
       <h3>Built for India</h3>
-      <p>PPF, EPF, NPS, HRA, GST, new vs old tax regime — every calculator is tuned for Indian financial rules, not just copy-pasted from foreign tools.</p>
+      <p>PPF, EPF, NPS, HRA, GST, new vs old tax regime — every calculator is tuned for Indian financial rules, not copy-pasted from foreign tools.</p>
     </div>
     <div class="value-card">
       <div class="value-icon">♾️</div>
@@ -285,44 +347,63 @@ footer{
 
   <!-- What we offer -->
   <div class="card">
-    <div class="card-icon">🧮</div>
-    <h2>What <span>YourFinMath</span> Offers</h2>
+    <div class="card-eyebrow">Our Coverage</div>
+    <h2>Everything your finances <em>need</em></h2>
     <p>We cover every major area of personal finance that matters to Indians:</p>
-    <p>🏠 <strong>Loans & EMI</strong> — Home loan, car loan, personal loan, prepayment savings and loan eligibility calculators.</p>
-    <p>📈 <strong>Investments</strong> — SIP, lumpsum, step-up SIP, CAGR, goal-based planning and more.</p>
-    <p>🏦 <strong>Savings</strong> — FD, RD, PPF, EPF, NPS and retirement corpus calculators.</p>
-    <p>📋 <strong>Tax</strong> — Income tax (new & old regime), GST, HRA, capital gains and salary breakdown.</p>
-    <p>🔮 <strong>What-If Tools</strong> — FIRE number, debt payoff, savings lifespan, chai habit cost and viral money scenarios.</p>
+    <div class="offer-list">
+      <div class="offer-item">
+        <span class="offer-emoji">🏠</span>
+        <div><strong>Loans & EMI</strong><span>Home loan, car loan, personal loan, prepayment savings and loan eligibility calculators.</span></div>
+      </div>
+      <div class="offer-item">
+        <span class="offer-emoji">📈</span>
+        <div><strong>Investments</strong><span>SIP, lumpsum, step-up SIP, CAGR, goal-based planning and more.</span></div>
+      </div>
+      <div class="offer-item">
+        <span class="offer-emoji">🏦</span>
+        <div><strong>Savings</strong><span>FD, RD, PPF, EPF, NPS and retirement corpus calculators.</span></div>
+      </div>
+      <div class="offer-item">
+        <span class="offer-emoji">📋</span>
+        <div><strong>Tax</strong><span>Income tax (new & old regime), GST, HRA, capital gains and salary breakdown.</span></div>
+      </div>
+      <div class="offer-item">
+        <span class="offer-emoji">🔮</span>
+        <div><strong>What-If Tools</strong><span>FIRE number, debt payoff, savings lifespan, chai habit cost and viral money scenarios.</span></div>
+      </div>
+    </div>
   </div>
 
-  <!-- CTA -->
+  <!-- CTA Banner -->
   <div class="cta-banner">
-    <h2>Ready to plan your finances?</h2>
+    <h2>Ready to plan your <em>finances</em>?</h2>
     <p>35+ free calculators. No signup. Instant results. Built for every Indian.</p>
     <a class="cta-btn" href="index.html">Open the Calculators →</a>
   </div>
 
   <!-- Contact teaser -->
-  <div class="card">
-    <div class="card-icon">✉️</div>
-    <h2>Get in <span>Touch</span></h2>
-    <p>Have a suggestion for a new calculator? Found an error? Want to advertise on YourFinMath? We'd love to hear from you.</p>
-    <p>📧 Email us at: <a href="mailto:hello@yourfinmath.com" style="color:var(--teal);font-weight:600;">hello@yourfinmath.com</a></p>
-    <p>Or visit our <a href="contact.html" style="color:var(--teal);font-weight:600;">Contact page →</a></p>
+  <div class="contact-teaser">
+    <div class="contact-teaser-text">
+      <h3>Get in touch</h3>
+      <p>Have a suggestion for a new calculator? Found an error? Want to advertise?<br>
+      Email us at <a href="mailto:hello@yourfinmath.com">hello@yourfinmath.com</a> or visit our contact page.</p>
+    </div>
+    <a class="btn-outline-navy" href="contact.html">Contact us →</a>
   </div>
 
 </div>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="contact.html">Contact</a>
-    <a href="mailto:hello@yourfinmath.com">Advertise</a>
-    <a href="sitemap.xml">Sitemap</a>
-  </div>
+  <div class="footer-logo">Your<span>FinMath</span></div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="mailto:hello@yourfinmath.com">Advertise</a></li>
+    <li><a href="sitemap.xml">Sitemap</a></li>
+  </ul>
   <div class="footer-copy">© 2026 YourFinMath.com · Made with ♥ in India</div>
 </footer>
 
