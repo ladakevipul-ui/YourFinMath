@@ -73,8 +73,8 @@
   /* Typography */
   --ink:         #0B1828;   /* Deep navy-black for headings */
   --text:        #1E2D42;   /* Primary body text */
-  --text2:       #4A5C72;   /* Secondary text */
-  --text3:       #7A8FA8;   /* Muted/labels */
+  --text2:       #344D65;   /* Secondary text — darkened for WCAG AA contrast */
+  --text3:       #546880;   /* Muted/labels — darkened for WCAG AA contrast */
 
   /* Borders & shadows */
   --border:      rgba(11,31,58,0.09);
@@ -103,18 +103,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ── BASE RESET & BODY ── */
-*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-
-body {
-  font-family: var(--font-body);
-  background: var(--bg);
-  color: var(--text);
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ── SKIP TO CONTENT (Accessibility) ── */
+.skip-link {
+  position: absolute; top: -100px; left: 1rem; z-index: 9999;
+  background: var(--navy); color: #fff; padding: 0.75rem 1.25rem;
+  border-radius: 0 0 8px 8px; font-size: 0.9rem; font-weight: 600;
+  transition: top 0.2s; text-decoration: none;
 }
+.skip-link:focus { top: 0; }
+
 
 /* ── SCROLL PROGRESS — navy→emerald→gold gradient ── */
 .scroll-progress {
@@ -728,13 +725,14 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover { background: rgba(200,221,245,0.
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <div class="scroll-progress" id="scrollProgress"></div>
 
 <!-- NAV -->
 <nav>
   <a class="nav-logo" href="#">
     <div class="nav-logo-dot">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="28" height="28" style="display:block;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="28" height="28" style="display:block;" role="img" aria-label="YourFinMath logo">
         <rect width="64" height="64" rx="16" fill="#0B1F3A"/>
         <polyline points="10,48 24,36 36,42 54,18" fill="none" stroke="#1A7A4A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
         <polygon points="54,18 46,20 52,26" fill="#C8973A"/>
@@ -746,20 +744,20 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover { background: rgba(200,221,245,0.
   </a>
   <div class="nav-search">
     <span class="nav-search-icon">⌕</span>
-    <input type="text" id="globalSearch" placeholder="Search 35+ calculators..." oninput="searchCalcs(this.value)">
+    <input type="text" id="globalSearch" placeholder="Search 35+ calculators..." oninput="searchCalcs(this.value)" aria-label="Search calculators">
   </div>
-  <ul class="nav-links">
+  <ul class="nav-links" aria-label="Main navigation">
     <li><a href="#planner">Calculators</a></li>
     <li><a href="#testimonials">Trust</a></li>
     <li><a href="#faq">FAQ</a></li>
-    <li><button class="mode-btn" id="modeToggle">🌙 Dark</button></li>
-    <li><button class="nav-cta" onclick="document.getElementById('donate').scrollIntoView({behavior:'smooth'})">☕ Support Us</button></li>
+    <li><button class="mode-btn" id="modeToggle" aria-label="Toggle dark mode">🌙 Dark</button></li>
+    <li><button class="nav-cta" onclick="document.getElementById('donate').scrollIntoView({behavior:'smooth'})" aria-label="Support us with a donation">☕ Support Us</button></li>
   </ul>
   <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-expanded="false"><span>☰</span></button>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" aria-label="Introduction">
   <div class="hero-bg"></div>
   <div class="hero-left">
     <div class="hero-eyebrow">Accurate tools · Built for India · FY 2026-27 ready</div>
@@ -832,7 +830,7 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover { background: rgba(200,221,245,0.
 </section>
 
 <!-- TRUST STRIP -->
-<section class="trust-section reveal">
+<section class="trust-section reveal" aria-label="Why trust YourFinMath">
   <div class="trust-inner">
     <div class="trust-item">
       <strong>Accurate by design</strong>
@@ -854,7 +852,7 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover { background: rgba(200,221,245,0.
 </section>
 
 <!-- FILTERS -->
-<section class="filters-section reveal" id="planner">
+<section class="filters-section reveal" id="planner" aria-label="Calculator categories">
   <div class="filters-header">
     <div class="filters-title">
       <h2>Choose a planning category</h2>
@@ -863,19 +861,19 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover { background: rgba(200,221,245,0.
     <div class="content-pill">35+ live calculators</div>
   </div>
   <div class="filters">
-    <button class="filter-btn active" onclick="filterCat('all',this)">All</button>
-    <button class="filter-btn" onclick="filterCat('loans',this)">🏠 Loans & EMI</button>
-    <button class="filter-btn" onclick="filterCat('invest',this)">📈 Investment</button>
-    <button class="filter-btn" onclick="filterCat('savings',this)">🏦 Savings</button>
-    <button class="filter-btn" onclick="filterCat('tax',this)">📋 Tax</button>
-    <button class="filter-btn" onclick="filterCat('salary',this)">💼 Salary</button>
-    <button class="filter-btn" onclick="filterCat('debt',this)">💳 Debt</button>
-    <button class="filter-btn" onclick="filterCat('whatif',this)">🔮 What If?</button>
+    <button class="filter-btn active" onclick="filterCat('all',this)" aria-label="Show all calculators" aria-pressed="true">All</button>
+    <button class="filter-btn" onclick="filterCat('loans',this)" aria-label="Filter: Loans and EMI" aria-pressed="false">🏠 Loans & EMI</button>
+    <button class="filter-btn" onclick="filterCat('invest',this)" aria-label="Filter: Investment" aria-pressed="false">📈 Investment</button>
+    <button class="filter-btn" onclick="filterCat('savings',this)" aria-label="Filter: Savings" aria-pressed="false">🏦 Savings</button>
+    <button class="filter-btn" onclick="filterCat('tax',this)" aria-label="Filter: Tax" aria-pressed="false">📋 Tax</button>
+    <button class="filter-btn" onclick="filterCat('salary',this)" aria-label="Filter: Salary" aria-pressed="false">💼 Salary</button>
+    <button class="filter-btn" onclick="filterCat('debt',this)" aria-label="Filter: Debt" aria-pressed="false">💳 Debt</button>
+    <button class="filter-btn" onclick="filterCat('whatif',this)" aria-label="Filter: What If scenarios" aria-pressed="false">🔮 What If?</button>
   </div>
 </section>
 
 <!-- MAIN -->
-<main class="main">
+<main class="main" id="main-content">
 <div class="content-heading reveal">
   <div>
     <h2>Financial calculators that feel product-grade</h2>
@@ -2118,7 +2116,7 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover { background: rgba(200,221,245,0.
     <h3>☕ YourFinMath is 100% free — keep it that way</h3>
     <p>No ads blocking your calculator. No paywalls. Just honest tools for your financial journey. If YourFinMath helped you save or plan better, buy us a chai.</p>
   </div>
-  <button class="donate-btn" onclick="alert('UPI / Razorpay donation link here!')">☕ Buy us a Chai</button>
+  <button class="donate-btn" aria-label="Support YourFinMath with a donation" onclick="alert('UPI / Razorpay donation link here!')">☕ Buy us a Chai</button>
 </div>
 
 </main>
@@ -2212,7 +2210,7 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover { background: rgba(200,221,245,0.
 <footer>
   <div class="footer-logo">Your<span>FinMath</span></div>
   <div class="footer-tagline">Financial Wisdom · Free Forever · Made in India</div>
-  <ul class="footer-links">
+  <ul class="footer-links" aria-label="Footer navigation">
     <li><a href="about.html">About</a></li>
     <li><a href="privacy.html">Privacy Policy</a></li>
     <li><a href="contact.html">Contact</a></li>
@@ -2553,8 +2551,9 @@ calcCH(); calcAGE(); calcHIKE(); calcFL(); calcR72(); calcSG();
 
 // FILTER
 function filterCat(cat, btn){
-  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.filter-btn').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false');});
   btn.classList.add('active');
+  btn.setAttribute('aria-pressed','true');
   document.querySelectorAll('.section-group').forEach(s=>{s.style.display=(cat==='all'||s.dataset.cat===cat)?'block':'none';});
   document.querySelectorAll('.calc-card').forEach(c=>{c.classList.toggle('hidden', cat!=='all' && c.dataset.cat!==cat);});
 }
