@@ -163,6 +163,7 @@ nav {
   transition: color 0.18s, background 0.18s;
 }
 .nav-links a:hover { color: var(--navy); background: var(--bg2); }
+.nav-links a[href="/blog"] { color: var(--emerald); font-weight: 600; }
 .nav-cta {
   background: var(--navy) !important; color: #fff !important;
   padding: 0.5rem 1.25rem !important; border-radius: 8px !important;
@@ -732,7 +733,7 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover { background: rgba(200,221,245,0.
 <nav>
   <a class="nav-logo" href="#">
     <div class="nav-logo-dot">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="28" height="28" style="display:block;" role="img" aria-label="YourFinMath logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="28" height="28" style="display:block;" role="img" aria-label="YourFinMath logo — free financial calculators India">
         <rect width="64" height="64" rx="16" fill="#0B1F3A"/>
         <polyline points="10,48 24,36 36,42 54,18" fill="none" stroke="#1A7A4A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
         <polygon points="54,18 46,20 52,26" fill="#C8973A"/>
@@ -748,6 +749,7 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover { background: rgba(200,221,245,0.
   </div>
   <ul class="nav-links" aria-label="Main navigation">
     <li><a href="#planner">Calculators</a></li>
+    <li><a href="/blog">Blog</a></li>
     <li><a href="#testimonials">Trust</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><button class="mode-btn" id="modeToggle" aria-label="Toggle dark mode">🌙 Dark</button></li>
@@ -2109,6 +2111,56 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover { background: rgba(200,221,245,0.
 
   </div>
 </div>
+
+<!-- BLOG SECTION -->
+<section class="reveal" aria-label="Finance blog" style="max-width:1240px;margin:0 auto;padding:4rem 2rem;">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:2rem;flex-wrap:wrap;gap:1rem;">
+    <div>
+      <div style="font-family:var(--font-mono);font-size:0.64rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--emerald);margin-bottom:0.6rem;">Finance Knowledge</div>
+      <h2 style="font-family:var(--font-display);font-size:1.85rem;font-weight:500;color:var(--navy);letter-spacing:-0.01em;">From the YourFinMath Blog</h2>
+      <p style="font-size:0.88rem;color:var(--text2);margin-top:0.4rem;font-weight:300;">Plain-language guides that make money decisions easier.</p>
+    </div>
+    <a href="/blog" style="font-size:0.82rem;font-weight:600;color:var(--emerald);display:flex;align-items:center;gap:0.4rem;white-space:nowrap;">View all articles →</a>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;">
+
+    <!-- Article 1 — LIVE -->
+    <a href="/blog/old-vs-new-tax-regime-2026-27.html" style="background:var(--card-bg);border:1px solid var(--border-mid);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform 0.2s,box-shadow 0.2s;text-decoration:none;color:var(--text);" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(11,31,58,0.10)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+      <div style="height:90px;background:linear-gradient(135deg,#fef3c7,#fde68a);display:flex;align-items:center;justify-content:center;font-size:38px;">⚖️</div>
+      <div style="padding:1.1rem;flex:1;display:flex;flex-direction:column;">
+        <span style="display:inline-block;background:#fef3c7;color:#92400e;font-size:11px;font-weight:600;padding:2px 9px;border-radius:4px;margin-bottom:0.6rem;width:fit-content;">📋 Tax · FY 2026-27</span>
+        <h3 style="font-size:0.92rem;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:0.5rem;">Old vs New Tax Regime — Which Saves You More?</h3>
+        <p style="font-size:0.8rem;color:var(--text2);line-height:1.6;flex:1;font-weight:300;">Real examples for ₹8L, ₹12L, ₹15L and ₹20L income. Know your answer in 5 minutes.</p>
+        <div style="display:flex;justify-content:space-between;margin-top:0.85rem;font-size:0.72rem;color:var(--text3);">
+          <span>📅 May 2026</span><span>⏱ 6 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Article 2 — Coming Soon -->
+    <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;opacity:0.6;">
+      <div style="height:90px;background:linear-gradient(135deg,#d4f0e8,#a7f3d0);display:flex;align-items:center;justify-content:center;font-size:38px;">📈</div>
+      <div style="padding:1.1rem;flex:1;display:flex;flex-direction:column;">
+        <span style="display:inline-block;background:#d4f0e8;color:#0f6e56;font-size:11px;font-weight:600;padding:2px 9px;border-radius:4px;margin-bottom:0.6rem;width:fit-content;">📈 Investing</span>
+        <h3 style="font-size:0.92rem;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:0.5rem;">SIP vs Lumpsum — Which Grows More in 10 Years?</h3>
+        <p style="font-size:0.8rem;color:var(--text2);line-height:1.6;flex:1;font-weight:300;">A data-driven comparison with real compound growth numbers.</p>
+        <div style="margin-top:0.85rem;"><span style="background:#f3f4f6;color:#6b7280;font-size:10px;font-weight:600;padding:3px 9px;border-radius:4px;">Coming Soon</span></div>
+      </div>
+    </div>
+
+    <!-- Article 3 — Coming Soon -->
+    <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;opacity:0.6;">
+      <div style="height:90px;background:linear-gradient(135deg,#e0eaff,#bfdbfe);display:flex;align-items:center;justify-content:center;font-size:38px;">💼</div>
+      <div style="padding:1.1rem;flex:1;display:flex;flex-direction:column;">
+        <span style="display:inline-block;background:#e0eaff;color:#1e40af;font-size:11px;font-weight:600;padding:2px 9px;border-radius:4px;margin-bottom:0.6rem;width:fit-content;">💼 Salary</span>
+        <h3 style="font-size:0.92rem;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:0.5rem;">₹10L, ₹15L, ₹20L CTC — Your Actual In-Hand Salary</h3>
+        <p style="font-size:0.8rem;color:var(--text2);line-height:1.6;flex:1;font-weight:300;">What actually hits your bank every month — broken down clearly.</p>
+        <div style="margin-top:0.85rem;"><span style="background:#f3f4f6;color:#6b7280;font-size:10px;font-weight:600;padding:3px 9px;border-radius:4px;">Coming Soon</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <!-- DONATE STRIP -->
 <div class="donate-strip reveal" id="donate">
