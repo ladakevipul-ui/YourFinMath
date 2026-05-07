@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Old vs New Tax Regime FY 2026-27 — Which Saves You More Money? | YourFinMath</title>
+  <meta name="description" content="Compare old vs new tax regime for FY 2026-27. See which regime saves more tax based on your salary, 80C investments, HRA, and home loan. Free calculator included." />
+  <meta name="keywords" content="old vs new tax regime 2026-27, income tax India 2026, which tax regime is better, new tax regime calculator, 80C deduction old regime, tax saving tips India" />
+  <meta name="author" content="YourFinMath" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <link rel="canonical" href="https://yourfinmath.com/blog/old-vs-new-tax-regime-2026-27" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Old vs New Tax Regime FY 2026-27 — Which Saves You More?" />
+  <meta property="og:description" content="A complete guide with real examples, salary breakdowns, and a free calculator to find which tax regime puts more money in your pocket." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://yourfinmath.com/blog/old-vs-new-tax-regime-2026-27" />
+  <meta property="og:site_name" content="YourFinMath" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Old vs New Tax Regime FY 2026-27 | YourFinMath" />
+  <meta name="twitter:description" content="Which tax regime saves you more in FY 2026-27? Real examples for ₹8L, ₹12L, ₹15L, ₹20L income." />
+
+  <!-- Schema.org Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Old vs New Tax Regime FY 2026-27 — Which Saves You More Money?",
+    "description": "Compare old vs new tax regime for FY 2026-27 with real salary examples and a free calculator.",
+    "author": {
+      "@type": "Organization",
+      "name": "YourFinMath",
+      "url": "https://yourfinmath.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "YourFinMath",
+      "url": "https://yourfinmath.com"
+    },
+    "datePublished": "2026-05-05",
+    "dateModified": "2026-05-05",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://yourfinmath.com/blog/old-vs-new-tax-regime-2026-27"
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which tax regime is better for salaried employees in FY 2026-27?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For income up to ₹12 lakh, new regime is better as tax is zero. For income above ₹15 lakh with significant deductions (80C + HRA + home loan), old regime may save more. Use a calculator to compare for your specific situation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is income up to ₹12 lakh tax-free in new regime?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Under the new tax regime for FY 2026-27, individuals with income up to ₹12 lakh get full tax rebate under Section 87A. Salaried employees also get ₹75,000 standard deduction, making effective tax-free income ₹12.75 lakh."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I switch between old and new tax regime every year?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Salaried employees can switch between old and new tax regime every financial year. Self-employed individuals can switch only once from old to new regime."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What deductions are available in old tax regime?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Old regime allows 80C (up to ₹1.5L), 80D (health insurance), HRA exemption, home loan interest (Section 24), LTA, NPS (80CCD), and many other deductions."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --brand: #0f2f2d;
+      --brand-mid: #1a4a47;
+      --brand-light: #2d6b66;
+      --accent: #4ecba0;
+      --accent-warm: #f0a500;
+      --bg: #fafaf8;
+      --bg-card: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #5a5a5a;
+      --text-light: #888;
+      --border: #e5e5e0;
+      --success: #0f6e56;
+      --warning: #b45309;
+      --radius: 12px;
+      --radius-sm: 8px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    /* NAV */
+    nav {
+      background: var(--brand);
+      padding: 0 2rem;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-logo {
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-logo span {
+      color: var(--accent);
+    }
+    .nav-cta {
+      background: var(--accent);
+      color: var(--brand);
+      padding: 7px 18px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* HERO */
+    .hero {
+      background: var(--brand);
+      color: #fff;
+      padding: 56px 2rem 52px;
+      text-align: center;
+    }
+    .hero-breadcrumb {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 20px;
+      letter-spacing: 0.3px;
+    }
+    .hero-breadcrumb a { color: var(--accent); text-decoration: none; }
+    .hero-tag {
+      display: inline-block;
+      background: rgba(78,203,160,0.15);
+      color: var(--accent);
+      border: 1px solid rgba(78,203,160,0.3);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 5vw, 46px);
+      font-weight: 700;
+      line-height: 1.2;
+      max-width: 700px;
+      margin: 0 auto 18px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .hero-sub {
+      font-size: 16px;
+      color: rgba(255,255,255,0.7);
+      max-width: 520px;
+      margin: 0 auto 28px;
+      line-height: 1.6;
+    }
+    .hero-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      flex-wrap: wrap;
+    }
+    .hero-meta span { display: flex; align-items: center; gap: 5px; }
+
+    /* LAYOUT */
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: 40px;
+      max-width: 1100px;
+      margin: 48px auto;
+      padding: 0 1.5rem;
+      align-items: start;
+    }
+    @media (max-width: 860px) {
+      .layout { grid-template-columns: 1fr; }
+      .sidebar { display: none; }
+    }
+
+    /* ARTICLE BODY */
+    article h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--brand);
+      margin: 44px 0 16px;
+      line-height: 1.3;
+    }
+    article h3 {
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--brand-mid);
+      margin: 28px 0 12px;
+    }
+    article p { margin-bottom: 18px; color: var(--text); }
+    article a { color: var(--brand-light); text-decoration: underline; }
+    article ul, article ol { padding-left: 1.5rem; margin-bottom: 18px; }
+    article li { margin-bottom: 8px; }
+    article strong { font-weight: 600; color: var(--brand); }
+
+    /* HIGHLIGHT BOX */
+    .highlight {
+      background: linear-gradient(135deg, #e8f5f0, #d4f0e8);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 18px 22px;
+      margin: 28px 0;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    .highlight strong { color: var(--success); }
+
+    .warning-box {
+      background: #fef9ec;
+      border-left: 4px solid var(--accent-warm);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 16px 20px;
+      margin: 24px 0;
+      font-size: 15px;
+    }
+
+    /* COMPARISON TABLE */
+    .table-wrap { overflow-x: auto; margin: 28px 0; border-radius: var(--radius); box-shadow: 0 2px 16px rgba(0,0,0,0.07); }
+    table { width: 100%; border-collapse: collapse; background: var(--bg-card); font-size: 15px; }
+    thead { background: var(--brand); color: #fff; }
+    thead th { padding: 14px 16px; text-align: left; font-weight: 500; font-size: 14px; }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background 0.15s; }
+    tbody tr:hover { background: #f5faf9; }
+    tbody td { padding: 13px 16px; }
+    tbody td:first-child { font-weight: 500; color: var(--brand); }
+    .badge-new { display: inline-block; background: #d4f0e8; color: var(--success); font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-left: 6px; }
+    .badge-old { display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-left: 6px; }
+    .win { color: var(--success); font-weight: 600; }
+    .lose { color: #b45309; }
+
+    /* SALARY CARDS */
+    .salary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+    }
+    .salary-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .salary-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.09); }
+    .salary-card .income { font-size: 20px; font-weight: 700; color: var(--brand); margin-bottom: 12px; }
+    .salary-card .regime-row { display: flex; justify-content: space-between; font-size: 13px; padding: 5px 0; border-bottom: 1px solid var(--border); }
+    .salary-card .regime-row:last-of-type { border-bottom: none; }
+    .salary-card .winner-badge {
+      margin-top: 12px;
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .new-wins .winner-badge { background: #d4f0e8; color: var(--success); }
+    .old-wins .winner-badge { background: #fef3c7; color: #92400e; }
+    .new-wins { border-top: 3px solid var(--accent); }
+    .old-wins { border-top: 3px solid var(--accent-warm); }
+
+    /* CTA BLOCK */
+    .cta-block {
+      background: var(--brand);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      margin: 40px 0;
+      text-align: center;
+    }
+    .cta-block h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: #fff;
+      margin: 0 0 10px;
+    }
+    .cta-block p { color: rgba(255,255,255,0.7); font-size: 15px; margin-bottom: 22px; }
+    .cta-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--brand);
+      font-weight: 700;
+      font-size: 15px;
+      padding: 13px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+    .cta-btn:hover { opacity: 0.9; transform: scale(1.02); }
+
+    /* STEP BOXES */
+    .step-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      margin-bottom: 16px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .step-num {
+      background: var(--brand);
+      color: #fff;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .step-content h4 { font-size: 16px; font-weight: 600; margin-bottom: 4px; color: var(--brand); }
+    .step-content p { font-size: 14px; color: var(--text-muted); margin: 0; }
+
+    /* FAQ */
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 18px 20px;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--brand);
+    }
+    .faq-q::after { content: '+'; font-size: 20px; color: var(--accent); transition: transform 0.2s; }
+    .faq-item.open .faq-q::after { content: '−'; }
+    .faq-a {
+      display: none;
+      padding: 0 20px 18px;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-a { display: block; }
+
+    /* SIDEBAR */
+    .sidebar { position: sticky; top: 80px; }
+    .sidebar-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      margin-bottom: 20px;
+    }
+    .sidebar-card h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--brand);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 14px;
+    }
+    .toc-link {
+      display: block;
+      font-size: 13px;
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 5px 0;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.15s;
+    }
+    .toc-link:last-child { border-bottom: none; }
+    .toc-link:hover { color: var(--brand); }
+    .calc-link-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      font-size: 13px;
+      color: var(--text);
+      transition: color 0.15s;
+    }
+    .calc-link-item:last-child { border-bottom: none; }
+    .calc-link-item:hover { color: var(--brand-light); }
+    .calc-icon { font-size: 16px; }
+
+    /* FOOTER */
+    footer {
+      background: var(--brand);
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 32px 1.5rem;
+      font-size: 13px;
+      margin-top: 60px;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer .footer-logo { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+
+    /* PROGRESS BAR */
+    .progress-bar {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      height: 3px;
+      background: var(--accent);
+      width: 0%;
+      z-index: 99;
+      transition: width 0.1s;
+    }
+  </style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="https://yourfinmath.com" class="nav-logo">
+    YourFin<span>Math</span>
+  </a>
+  <a href="https://yourfinmath.com/#tax" class="nav-cta">Try Calculator Free →</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-breadcrumb">
+    <a href="https://yourfinmath.com">Home</a> &nbsp;›&nbsp;
+    <a href="https://yourfinmath.com/blog">Blog</a> &nbsp;›&nbsp;
+    Old vs New Tax Regime
+  </div>
+  <div class="hero-tag">Tax Guide · FY 2026-27</div>
+  <h1>Old vs New Tax Regime — <em>Which Saves You More</em> Money?</h1>
+  <p class="hero-sub">A complete breakdown with real salary examples for ₹8L, ₹12L, ₹15L and ₹20L income — so you know exactly which regime to pick.</p>
+  <div class="hero-meta">
+    <span>📅 Updated May 2026</span>
+    <span>⏱ 6 min read</span>
+    <span>✅ FY 2026-27 rates</span>
+  </div>
+</div>
+
+<!-- LAYOUT -->
+<div class="layout">
+
+  <!-- ARTICLE -->
+  <article>
+
+    <p>Every year, millions of salaried Indians face the same question before filing their ITR: <strong>Should I pick the old tax regime or the new one?</strong></p>
+
+    <p>The answer isn't one-size-fits-all. It depends on your income, your investments, your rent, and your home loan — among other things. This guide breaks it all down with real numbers so you can decide in minutes, not hours.</p>
+
+    <div class="highlight">
+      <strong>Key update for FY 2026-27:</strong> The new tax regime now offers zero tax on income up to ₹12 lakh (thanks to Section 87A rebate). Salaried employees also get a ₹75,000 standard deduction — making effective tax-free income ₹12.75 lakh.
+    </div>
+
+    <h2 id="basics">The Basics — What Changed in FY 2026-27</h2>
+
+    <p>India has two parallel income tax systems. You choose one every year (salaried employees can switch annually; self-employed get one switch).</p>
+
+    <h3>New Tax Regime — Slab Rates FY 2026-27</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Income Slab</th>
+            <th>Tax Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Up to ₹4,00,000</td><td>Nil</td></tr>
+          <tr><td>₹4,00,001 – ₹8,00,000</td><td>5%</td></tr>
+          <tr><td>₹8,00,001 – ₹12,00,000</td><td>10%</td></tr>
+          <tr><td>₹12,00,001 – ₹16,00,000</td><td>15%</td></tr>
+          <tr><td>₹16,00,001 – ₹20,00,000</td><td>20%</td></tr>
+          <tr><td>₹20,00,001 – ₹24,00,000</td><td>25%</td></tr>
+          <tr><td>Above ₹24,00,000</td><td>30%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Plus:</strong> Standard deduction of ₹75,000 for salaried employees. Section 87A rebate makes tax zero for income up to ₹12 lakh.</p>
+
+    <h3>Old Tax Regime — Still the Same Slabs</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Income Slab</th>
+            <th>Tax Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Up to ₹2,50,000</td><td>Nil</td></tr>
+          <tr><td>₹2,50,001 – ₹5,00,000</td><td>5%</td></tr>
+          <tr><td>₹5,00,001 – ₹10,00,000</td><td>20%</td></tr>
+          <tr><td>Above ₹10,00,000</td><td>30%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>The old regime has higher rates but allows <strong>60+ deductions</strong> — 80C, HRA, home loan interest, 80D, NPS, LTA, and more — which can significantly reduce your taxable income.</p>
+
+    <h2 id="comparison">Key Differences at a Glance</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>New Regime <span class="badge-new">DEFAULT</span></th>
+            <th>Old Regime</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Tax-free income (salaried)</td><td class="win">₹12.75 lakh</td><td>₹5 lakh (with 87A)</td></tr>
+          <tr><td>Standard deduction</td><td class="win">₹75,000</td><td>₹50,000</td></tr>
+          <tr><td>80C deduction (₹1.5L)</td><td class="lose">Not available</td><td class="win">Available</td></tr>
+          <tr><td>HRA exemption</td><td class="lose">Not available</td><td class="win">Available</td></tr>
+          <tr><td>Home loan interest (Sec 24)</td><td class="lose">Not available</td><td class="win">Up to ₹2L</td></tr>
+          <tr><td>80D (health insurance)</td><td class="lose">Not available</td><td class="win">Up to ₹25,000</td></tr>
+          <tr><td>NPS (80CCD2 — employer)</td><td class="win">Available</td><td class="win">Available</td></tr>
+          <tr><td>Filing complexity</td><td class="win">Simple</td><td class="lose">More documents</td></tr>
+          <tr><td>Best for</td><td>Low deductions / young earners</td><td>High deductions</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="examples">Real Salary Examples — Who Saves More?</h2>
+
+    <p>Let's cut through theory. Here's what actual tax looks like for common salary levels in India:</p>
+
+    <div class="salary-grid">
+      <div class="salary-card new-wins">
+        <div class="income">₹8 LPA</div>
+        <div class="regime-row"><span>New Regime</span><span class="win">₹0</span></div>
+        <div class="regime-row"><span>Old Regime</span><span>₹46,800</span></div>
+        <span class="winner-badge">New Regime Wins ✓</span>
+      </div>
+      <div class="salary-card new-wins">
+        <div class="income">₹12 LPA</div>
+        <div class="regime-row"><span>New Regime</span><span class="win">₹0</span></div>
+        <div class="regime-row"><span>Old Regime*</span><span>₹62,400</span></div>
+        <span class="winner-badge">New Regime Wins ✓</span>
+      </div>
+      <div class="salary-card old-wins">
+        <div class="income">₹15 LPA</div>
+        <div class="regime-row"><span>New Regime</span><span>₹1,04,000</span></div>
+        <div class="regime-row"><span>Old Regime*</span><span class="win">₹54,600</span></div>
+        <span class="winner-badge" style="background:#fef3c7;color:#92400e;">Old Regime Wins ✓</span>
+      </div>
+      <div class="salary-card old-wins">
+        <div class="income">₹20 LPA</div>
+        <div class="regime-row"><span>New Regime</span><span>₹2,34,000</span></div>
+        <div class="regime-row"><span>Old Regime*</span><span class="win">₹1,56,000</span></div>
+        <span class="winner-badge" style="background:#fef3c7;color:#92400e;">Old Regime Wins ✓</span>
+      </div>
+    </div>
+
+    <p style="font-size:13px; color:var(--text-light);">*Old regime calculations assume standard deductions: ₹1.5L (80C) + ₹50,000 standard deduction + ₹25,000 (80D) + ₹2L (home loan interest). Figures are approximate. Use the calculator below for your exact numbers.</p>
+
+    <div class="warning-box">
+      <strong>Important:</strong> The ₹15L and ₹20L examples above assume you have significant deductions (80C investments, home loan, health insurance). If you don't have these — new regime may still win even at higher incomes.
+    </div>
+
+    <h2 id="who-should">Who Should Pick Which Regime?</h2>
+
+    <h3>Choose New Tax Regime if:</h3>
+    <ul>
+      <li>Your income is <strong>up to ₹12.75 lakh</strong> (zero tax — no contest)</li>
+      <li>You are a <strong>young earner</strong> just starting out with minimal investments</li>
+      <li>You <strong>don't invest in 80C</strong> instruments like PPF, ELSS, LIC regularly</li>
+      <li>You <strong>don't pay rent</strong> (no HRA benefit) or live in your own home</li>
+      <li>You prefer <strong>simpler tax filing</strong> with fewer documents</li>
+      <li>You want to invest <strong>flexibly</strong> without being locked into tax-saving products</li>
+    </ul>
+
+    <h3>Choose Old Tax Regime if:</h3>
+    <ul>
+      <li>You invest the full <strong>₹1.5 lakh under 80C</strong> every year (PPF, ELSS, LIC, EPF)</li>
+      <li>You pay <strong>significant rent</strong> and receive HRA from employer</li>
+      <li>You have a <strong>home loan</strong> with interest above ₹1.5 lakh/year</li>
+      <li>You pay <strong>health insurance premiums</strong> for self + parents (80D)</li>
+      <li>You contribute to <strong>NPS</strong> under 80CCD(1B) — extra ₹50,000 deduction</li>
+      <li>Total deductions exceed <strong>₹3.75 lakh</strong> per year</li>
+    </ul>
+
+    <div class="cta-block">
+      <h3>Not sure which regime saves you more?</h3>
+      <p>Use our free Old vs New Regime calculator. Enter your salary, investments, and HRA — get your exact tax in both regimes instantly. No signup needed.</p>
+      <a href="https://yourfinmath.com/#tax" class="cta-btn">Calculate My Tax Now →</a>
+    </div>
+
+    <h2 id="how-to-decide">How to Decide in 3 Steps</h2>
+
+    <div class="step-box">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>Add up all your deductions</h4>
+        <p>Total your 80C investments + HRA exemption + home loan interest + 80D premiums + any other deductions you actually have.</p>
+      </div>
+    </div>
+
+    <div class="step-box">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Add ₹75,000 standard deduction</h4>
+        <p>Both regimes offer a standard deduction now. New regime gives ₹75,000; old gives ₹50,000. Add the relevant one to your total.</p>
+      </div>
+    </div>
+
+    <div class="step-box">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>If total deductions > ₹3.75 lakh → Old regime likely wins</h4>
+        <p>Below ₹3.75L in deductions? New regime almost always saves more. Above? Run both through our calculator to confirm.</p>
+      </div>
+    </div>
+
+    <h2 id="common-mistakes">Common Mistakes to Avoid</h2>
+
+    <ul>
+      <li><strong>Assuming new regime is always better</strong> — It's great for low incomes and low deductions. Not always for high earners with investments.</li>
+      <li><strong>Forgetting employer NPS contribution (80CCD2)</strong> — This deduction is available in BOTH regimes. Don't leave it unclaimed.</li>
+      <li><strong>Not informing employer on time</strong> — Your employer deducts TDS based on the regime you declare at the start of the year. Choose wisely in April.</li>
+      <li><strong>Comparing only tax slabs, not effective tax rate</strong> — Old regime's higher slabs can be offset by deductions. Always compare final tax amount, not rates.</li>
+    </ul>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">Is income up to ₹12 lakh truly tax-free in new regime?</div>
+      <div class="faq-a">Yes. Under the new tax regime for FY 2026-27, the Section 87A rebate covers the full tax liability for income up to ₹12 lakh. Salaried employees additionally get ₹75,000 standard deduction, making effective tax-free income ₹12.75 lakh. However, special income like capital gains, lottery, etc. is taxed separately.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Can I switch tax regime every year?</div>
+      <div class="faq-a">Salaried employees can switch between old and new tax regime every financial year — simply declare your choice to your employer in April or while filing your ITR. Self-employed individuals (business income) can switch from old to new regime only once.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Which regime is better if I have a home loan?</div>
+      <div class="faq-a">If you have a home loan with annual interest above ₹1.5–2 lakh AND you also invest in 80C instruments, the old regime often saves more tax — especially for income above ₹15 lakh. Use the YourFinMath calculator to enter your exact numbers and compare.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What if I forget to declare my regime to my employer?</div>
+      <div class="faq-a">If you don't inform your employer, TDS is deducted under the new regime (which is now the default). You can correct this while filing your ITR by choosing the regime that benefits you more at that time.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Is the new regime better for a ₹20 lakh salary?</div>
+      <div class="faq-a">It depends on your deductions. With maximum deductions (80C ₹1.5L + home loan interest ₹2L + 80D ₹25,000 + HRA), the old regime typically saves ₹60,000–80,000 more per year at ₹20L income. Without these deductions, new regime may be comparable or better.</div>
+    </div>
+
+    <h2 id="conclusion">The Bottom Line</h2>
+
+    <p>For most Indians earning under ₹12.75 lakh — the new tax regime is a clear winner. Zero tax, simpler filing, no need to force-invest in tax-saving products.</p>
+
+    <p>For higher earners who genuinely invest in PPF/ELSS, pay rent, and have a home loan — the old regime's deductions can more than offset its higher slab rates, saving ₹50,000 to ₹1 lakh+ per year.</p>
+
+    <p>The math is different for every person. Don't guess — calculate your exact numbers in 30 seconds using our free tool below.</p>
+
+    <div class="cta-block">
+      <h3>Calculate Your Exact Tax in Both Regimes</h3>
+      <p>Free · No signup · FY 2026-27 updated · India-specific</p>
+      <a href="https://yourfinmath.com/#tax" class="cta-btn">Open Tax Regime Calculator →</a>
+    </div>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h4>In this article</h4>
+      <a href="#basics" class="toc-link">What changed in FY 2026-27</a>
+      <a href="#comparison" class="toc-link">Key differences at a glance</a>
+      <a href="#examples" class="toc-link">Real salary examples</a>
+      <a href="#who-should" class="toc-link">Who should pick which</a>
+      <a href="#how-to-decide" class="toc-link">How to decide in 3 steps</a>
+      <a href="#common-mistakes" class="toc-link">Common mistakes</a>
+      <a href="#faq" class="toc-link">FAQs</a>
+      <a href="#conclusion" class="toc-link">The bottom line</a>
+    </div>
+
+    <div class="sidebar-card">
+      <h4>Related Calculators</h4>
+      <a href="https://yourfinmath.com/#tax" class="calc-link-item">
+        <span class="calc-icon">⚖️</span> Old vs New Regime
+      </a>
+      <a href="https://yourfinmath.com/#tax" class="calc-link-item">
+        <span class="calc-icon">📋</span> Income Tax — New Regime
+      </a>
+      <a href="https://yourfinmath.com/#salary" class="calc-link-item">
+        <span class="calc-icon">💼</span> In-Hand Salary (CTC)
+      </a>
+      <a href="https://yourfinmath.com/#tax" class="calc-link-item">
+        <span class="calc-icon">🏘️</span> HRA Exemption
+      </a>
+      <a href="https://yourfinmath.com/#savings" class="calc-link-item">
+        <span class="calc-icon">🎖️</span> NPS Calculator
+      </a>
+    </div>
+
+    <div class="sidebar-card" style="background:var(--brand); color:#fff; border-color:var(--brand);">
+      <h4 style="color:rgba(255,255,255,0.5);">Quick verdict</h4>
+      <p style="font-size:14px; color:rgba(255,255,255,0.85); margin-bottom:16px; line-height:1.6;">Income under ₹12.75L? Pick <strong style="color:var(--accent);">New Regime</strong>.<br><br>Heavy deductions above ₹3.75L? <strong style="color:#f0a500;">Old Regime</strong> may save more.</p>
+      <a href="https://yourfinmath.com/#tax" style="display:block; background:var(--accent); color:var(--brand); text-align:center; padding:10px; border-radius:8px; font-weight:700; font-size:13px; text-decoration:none;">Calculate Mine →</a>
+    </div>
+
+  </aside>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">YourFinMath</div>
+  <p>Free financial calculators built for India. No signup. No ads. Just clarity.</p>
+  <p style="margin-top:10px;"><a href="https://yourfinmath.com">Home</a> &nbsp;·&nbsp; <a href="https://yourfinmath.com/#planner">Calculators</a> &nbsp;·&nbsp; <a href="https://yourfinmath.com/blog">Blog</a></p>
+  <p style="margin-top:14px; font-size:12px;">© 2026 YourFinMath · This content is for informational purposes only. Consult a tax professional for personalised advice.</p>
+</footer>
+
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrollTop = doc.scrollTop || document.body.scrollTop;
+    const scrollHeight = doc.scrollHeight - doc.clientHeight;
+    const pct = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+    document.getElementById('progressBar').style.width = pct + '%';
+  });
+
+  // FAQ toggle
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      item.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>
